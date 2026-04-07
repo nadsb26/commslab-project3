@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Café Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lavishly+Yours&display=swap');
+  </style>
+</head>
+<body>
+
+  <!-- EXTERIOR -->
+  <div id="exterior">
+    <img src="assets/drawings/exterior.jpg" id="outside" alt="Cafe exterior" />
+    <div id="openSign">OPEN</div>
+  </div>
+
+  <!-- INTERIOR -->
+  <div id="interior">
+    <img src="assets/drawings/interior.JPG" id="bg" alt="Cafe interior" />
+
+    <!-- LILY -->
+    <div id="lilyWrap" class="charWrap">
+      <img src="assets/drawings/lily.PNG" id="lily" class="character" alt="Lily" />
+      <div id="lilyHotspot" class="hotspot"></div>
+    </div>
+
+    <!-- RORY -->
+    <div id="roryWrap" class="charWrap">
+      <img src="assets/drawings/rory.PNG" id="rory" class="character" alt="Rory" />
+      <div id="roryHotspot" class="hotspot"></div>
+    </div>
+
+    <!-- MEL -->
+    <div id="melWrap" class="charWrap">
+      <img src="assets/drawings/mel.PNG" id="mel" class="character" alt="Mel" />
+      <div id="melHotspot" class="hotspot"></div>
+    </div>
+
+    <!-- JESS -->
+    <div id="jessWrap" class="charWrap">
+      <img src="assets/drawings/jess.PNG" id="jess" class="character" alt="Jess" />
+      <div id="jessHotspot" class="hotspot"></div>
+    </div>
+  
+
+    <!-- PHONE -->
+    <div id="phoneWrap" class="charWrap" style="display:none;">
+      <img src="assets/drawings/phone.png" id="phoneImg" alt="Phone"/>
+      <div id="phoneHotspot" class="hotspot"></div>
+    </div>
+  </div>
+
+  <!-- PHONE VIDEO POPUP -->
+  <div id="phonePopup">
+    <div id="phonePopupInner">
+      <video id="phoneVideo" src="assets/phone_recording.mp4"></video>
+    </div>
+  </div>
+
+  <!-- END SCREEN -->
+  <div id="endScreen">
+    <p id="endText">And so, Lily and Jess lived Happily Ever After</p>
+  </div>
+
+  <div id="blackScreen"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
