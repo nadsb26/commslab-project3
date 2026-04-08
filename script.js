@@ -47,7 +47,6 @@ const mel16 = new Audio("assets/audio/mel/mel16.mp3");
 
 const lily4 = new Audio("assets/audio/lily/lily4.mp3");
 
-
 // Scene 4 dialogue
 const mel17 = new Audio("assets/audio/mel/mel17.mp3");
 
@@ -163,11 +162,9 @@ function showPhonePopup(notificationTime, onDone) {
     onDone();
   };
 
-  // Play must be called in the same tick as the user gesture.
-  // phone_click handler calls next() synchronously, so this is safe.
   video.play().catch(err => {
     console.warn("Video autoplay blocked:", err);
-    // Fallback: show a tap-to-play message inside the popup
+    // fallback: show a tap-to-play message inside the popup
     const msg = document.createElement("div");
     msg.id = "tapToPlay";
     msg.textContent = "Tap to play";
@@ -238,22 +235,15 @@ const scene = [
   {
     type: "scene_setup",
     fn: () => {
-      // Hide Jess; bring Lily back for Scene 3
+      // Hide Jess; bring Lily back for Scene 3 & show phone on counter
       document.getElementById("jessWrap").style.display = "none";
       document.getElementById("lilyWrap").style.display = "block";
+      document.getElementById("phoneWrap").style.display = "block";
     }
   },
 
   // Scene 3
   { type: "sfx", audio: doorbell},
-
-  // show the phone on the counter 
-  {
-    type: "scene_setup",
-    fn: () => {
-      document.getElementById("phoneWrap").style.display = "block";
-    }
-  },
 
   { type: "char", char: "mel", audio: mel14},
   { type: "char", char: "lily", audio: lily4},
@@ -409,7 +399,6 @@ function next() {
         next();
       });
 
-      step++; 
     };
     return;
   }
