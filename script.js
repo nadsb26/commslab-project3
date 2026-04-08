@@ -33,12 +33,12 @@ const mel11 = new Audio("assets/audio/mel/mel11.mp3");
 const mel12 = new Audio("assets/audio/mel/mel12.mp3");
 const mel13 = new Audio("assets/audio/mel/mel13.mp3");
 
-const jess1 = new Audio("assets/audio/jess/Jess1.mp3");
-const jess2 = new Audio("assets/audio/jess/Jess2.mp3");
-const jess3 = new Audio("assets/audio/jess/Jess3.mp3");
-const jess4 = new Audio("assets/audio/jess/Jess4.mp3");
-const jess5 = new Audio("assets/audio/jess/Jess5.mp3");
-const jess6 = new Audio("assets/audio/jess/Jess6.mp3");
+const jess1 = new Audio("assets/audio/jess/jess1.mp3");
+const jess2 = new Audio("assets/audio/jess/jess2.mp3");
+const jess3 = new Audio("assets/audio/jess/jess3.mp3");
+const jess4 = new Audio("assets/audio/jess/jess4.mp3");
+const jess5 = new Audio("assets/audio/jess/jess5.mp3");
+const jess6 = new Audio("assets/audio/jess/jess6.mp3");
 
 // Scene 3 dialogue
 const mel14 = new Audio("assets/audio/mel/mel14.mp3");
@@ -54,8 +54,8 @@ const mel17 = new Audio("assets/audio/mel/mel17.mp3");
 const lily5 = new Audio("assets/audio/lily/lily5.mp3");
 const lily6 = new Audio("assets/audio/lily/lily6.mp3");
 
-const jess7 = new Audio("assets/audio/jess/Jess7.mp3");
-const jess8 = new Audio("assets/audio/jess/Jess8.mp3");
+const jess7 = new Audio("assets/audio/jess/jess7.mp3");
+const jess8 = new Audio("assets/audio/jess/jess8.mp3");
 
 // End screen music
 const endMusic = new Audio("assets/audio/end.mp3");
